@@ -20,10 +20,21 @@ namespace PrjBiblioteca.Controllers
         }
 
         // GET: Livros
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string filtroPesquisa)
         {
-            return View(await _context.Livro.ToListAsync());
+            ViewBag.filtroPesquisa = filtroPesquisa;
+
+            var livros = from l in _context.Livro
+                         select l;
+
+            if (!String.IsNullOrEmpty(filtroPesquisa))
+            {
+                livros = livros.Where(s => s.Titulo.ToUpper().Contains(filtroPesquisa.ToUpper()));
+            }
+
+            return View(await livros.ToListAsync());
         }
+
 
         // GET: Livros/Details/5
         public async Task<IActionResult> Details(int? id)
