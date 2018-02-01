@@ -1,0 +1,12 @@
+D:\PrjBiblio2\PrjBiblioteca\bin\Debug\netcoreapp2.0\app.db
+D:\PrjBiblio2\PrjBiblioteca\bin\Debug\netcoreapp2.0\PrjBiblioteca.deps.json
+D:\PrjBiblio2\PrjBiblioteca\bin\Debug\netcoreapp2.0\PrjBiblioteca.runtimeconfig.json
+D:\PrjBiblio2\PrjBiblioteca\bin\Debug\netcoreapp2.0\PrjBiblioteca.runtimeconfig.dev.json
+D:\PrjBiblio2\PrjBiblioteca\bin\Debug\netcoreapp2.0\PrjBiblioteca.dll
+D:\PrjBiblio2\PrjBiblioteca\bin\Debug\netcoreapp2.0\PrjBiblioteca.pdb
+D:\PrjBiblio2\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.csproj.CoreCompileInputs.cache
+D:\PrjBiblio2\PrjBiblioteca\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\PrjBiblio2\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.AssemblyInfoInputs.cache
+D:\PrjBiblio2\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.AssemblyInfo.cs
+D:\PrjBiblio2\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.dll
+D:\PrjBiblio2\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.pdb
