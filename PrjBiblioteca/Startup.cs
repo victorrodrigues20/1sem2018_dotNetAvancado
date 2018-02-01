@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PrjBiblioteca.Data;
+using PrjBiblioteca.Dados;
 using PrjBiblioteca.Models;
 using PrjBiblioteca.Services;
 
@@ -28,6 +29,8 @@ namespace PrjBiblioteca
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<BibliotecaDbContext>();
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
