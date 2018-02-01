@@ -10,3 +10,15 @@ D:\PrjBiblio2\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.AssemblyInfoIn
 D:\PrjBiblio2\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.AssemblyInfo.cs
 D:\PrjBiblio2\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.dll
 D:\PrjBiblio2\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.pdb
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\bin\Debug\netcoreapp2.0\app.db
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\bin\Debug\netcoreapp2.0\PrjBiblioteca.deps.json
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\bin\Debug\netcoreapp2.0\PrjBiblioteca.runtimeconfig.json
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\bin\Debug\netcoreapp2.0\PrjBiblioteca.runtimeconfig.dev.json
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\bin\Debug\netcoreapp2.0\PrjBiblioteca.dll
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\bin\Debug\netcoreapp2.0\PrjBiblioteca.pdb
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.csproj.CoreCompileInputs.cache
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.AssemblyInfoInputs.cache
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.AssemblyInfo.cs
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.dll
+D:\GitHub\1sem2018_dotNetAvancado\PrjBiblioteca\obj\Debug\netcoreapp2.0\PrjBiblioteca.pdb

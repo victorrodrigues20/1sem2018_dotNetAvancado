@@ -13130,11 +13130,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PrjBiblio2\\PrjBiblioteca\\PrjBiblioteca.csproj",
+      "projectUniqueName": "D:\\GitHub\\1sem2018_dotNetAvancado\\PrjBiblioteca\\PrjBiblioteca.csproj",
       "projectName": "PrjBiblioteca",
-      "projectPath": "D:\\PrjBiblio2\\PrjBiblioteca\\PrjBiblioteca.csproj",
+      "projectPath": "D:\\GitHub\\1sem2018_dotNetAvancado\\PrjBiblioteca\\PrjBiblioteca.csproj",
       "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
-      "outputPath": "D:\\PrjBiblio2\\PrjBiblioteca\\obj\\",
+      "outputPath": "D:\\GitHub\\1sem2018_dotNetAvancado\\PrjBiblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
