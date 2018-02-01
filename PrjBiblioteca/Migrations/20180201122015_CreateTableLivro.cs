@@ -13,8 +13,8 @@ namespace PrjBiblioteca.Migrations
                 columns: table => new
                 {
                     LivroID = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    Titulo = table.Column<string>(nullable: true)
+                        .Annotation("Sqlite:Autoincrement", true)
+                    /*, Titulo = table.Column<string>(nullable: true)*/
                 },
                 constraints: table =>
                 {
