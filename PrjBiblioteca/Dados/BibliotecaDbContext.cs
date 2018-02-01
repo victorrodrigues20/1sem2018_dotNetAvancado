@@ -17,8 +17,25 @@ namespace PrjBiblioteca.Dados
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {}
+        {
+            modelBuilder.Entity<SistemaUsuario>()
+                .HasKey(bc => new { bc.SistemaID, bc.UsuarioID });
+
+            modelBuilder.Entity<SistemaUsuario>()
+                .HasOne(bc => bc.Sistemas)
+                .WithMany(b => b.SistUsuarios)
+                .HasForeignKey(bc => bc.SistemaID);
+
+            modelBuilder.Entity<SistemaUsuario>()
+                .HasOne(bc => bc.Usuarios)
+                .WithMany(c => c.SistUsuarios)
+                .HasForeignKey(bc => bc.UsuarioID);
+
+            base.OnModelCreating(modelBuilder);
+        }
 
         public DbSet<PrjBiblioteca.Models.Livro> Livro { get; set; }
+
+        public DbSet<PrjBiblioteca.Models.Categoria> Categoria { get; set; }
     }
 }
