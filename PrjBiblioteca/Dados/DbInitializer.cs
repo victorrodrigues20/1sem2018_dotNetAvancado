@@ -7,7 +7,8 @@ public static class DbInitializer
     {
         public static void Initialize(BibliotecaDbContext context)
         {
-            context.Database.EnsureCreated();
+            if (context.Database.EnsureCreated())
+                return;
 
             // Se existir algum livro.
             if (context.Livro.Any())
@@ -15,6 +16,7 @@ public static class DbInitializer
                 return;   // DB possui registros
             }
 
+            #region Livros
             var livros = new Livro[]
             {
                 new Livro {Titulo = "PHP para quem conhece PHP",Quantidade = 10},
@@ -29,7 +31,28 @@ public static class DbInitializer
                 context.Livro.Add(l);
             }
 
-            context.SaveChanges();
+            #endregion
 
+            #region Autores
+
+            var autores = new Autor[]
+            {
+                new Autor { Nome = "Sérgio de Oliveira" },
+                new Autor { Nome = "Renato da Silva"},
+                new Autor { Nome = "Paulo Sérgio Travolla"},
+                new Autor { Nome = "Juliano Niederauer"},
+                new Autor { Nome = "Roberto Cohen"},
+                new Autor { Nome = "Chris McNab"},
+                new Autor { Nome = "Luiz Fernando Estevarengo"}
+            };
+
+            foreach (Autor a in autores)
+            {
+                context.Autor.Add(a);
+            }
+
+            #endregion
+
+            context.SaveChanges();
         }
     }
