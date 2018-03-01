@@ -22,14 +22,14 @@
 
 <table class="table">
     <thead>
-        <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Titulo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Quantidade)
-                </th>
-            <th></th>
+    <tr>
+        <th>
+            <a asp-action="Index" asp-route-ordenacao="@ViewBag.TituloSortParam">@Html.DisplayNameFor(model => model.Titulo)</a>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </th>
+        <th></th>
         </tr>
     </thead>
     <tbody>
