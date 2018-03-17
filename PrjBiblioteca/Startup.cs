@@ -38,6 +38,7 @@ namespace PrjBiblioteca
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddTransient<IServicoLogin, ServicoLogin>();
 
             services.AddMvc();
             services.AddDistributedMemoryCache();

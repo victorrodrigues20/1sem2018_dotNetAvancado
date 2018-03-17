@@ -11,8 +11,10 @@ namespace PrjBiblioteca.Models
         [StringLength(100)]
         public string Nome { get; set; }
 
+        public string ApplicationUserId { get; set; }
+
         public int? CategoriaID { get; set; }
-        public virtual Categoria Categoria { get; set; }       
+        public virtual Categoria Categoria { get; set; }    
 
         public ICollection<SistemaUsuario> SistUsuarios { get; set; }
     }

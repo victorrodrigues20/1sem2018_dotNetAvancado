@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using PrjBiblioteca.Dados;
 using PrjBiblioteca.Models;
 using PrjBiblioteca.Models.AccountViewModels;
 using PrjBiblioteca.Services;
@@ -24,13 +25,16 @@ namespace PrjBiblioteca.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailSender _emailSender;
         private readonly ILogger _logger;
+        private readonly BibliotecaDbContext _contextBiblioteca;
 
         public AccountController(
+            BibliotecaDbContext contextBiblioteca,
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             IEmailSender emailSender,
             ILogger<AccountController> logger)
         {
+            _contextBiblioteca = contextBiblioteca;
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
@@ -65,6 +69,7 @@ namespace PrjBiblioteca.Controllers
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
+
                     return RedirectToLocal(returnUrl);
                 }
                 if (result.RequiresTwoFactor)

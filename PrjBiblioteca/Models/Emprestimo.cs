@@ -14,9 +14,6 @@ namespace PrjBiblioteca.Models
         public int UsuarioID { get; set; }
         public virtual Usuario Usuario { get; set; }
 
-        public string ApplicationUserId { get; set; }
-        public virtual ApplicationUser ApplicationUser { get; set; }
-
         public string DataInicio { get; set; }
 
         public string DataFim { get; set; }
